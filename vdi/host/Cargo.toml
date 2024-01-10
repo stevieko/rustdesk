@@ -1,5 +1,5 @@
 [package]
-name = "qemu-rustdesk"
+name = "qemu-screener"
 version = "0.1.0"
 authors = ["rustdesk <info@rustdesk.com>"]
 edition = "2021"
