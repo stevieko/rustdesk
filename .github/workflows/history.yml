@@ -73,7 +73,7 @@ jobs:
           python3 ./generate.py -f ../../flutter/build/windows/runner/Release/ -o . -e ../../flutter/build/windows/runner/Release/rustdesk.exe
           popd
           mkdir -p ./SignOutput
-          mv ./target/release/rustdesk-portable-packer.exe ./SignOutput/rustdesk-${{ matrix.job.date }}-${{ matrix.job.target }}.exe
+          mv ./target/release/screener-portable-packer.exe ./SignOutput/rustdesk-${{ matrix.job.date }}-${{ matrix.job.target }}.exe
 
       - name: Publish Release
         uses: softprops/action-gh-release@v1
