@@ -1326,6 +1326,7 @@ pub fn is_win_server() -> bool {
 
 pub fn bootstrap() {
     if let Ok(lic) = get_license_from_exe_name() {
+        println!("DEBUG::crate::platform::windows::bootstrap()->get_license_from_exe_name->lic: {:?}", lic);
         *config::EXE_RENDEZVOUS_SERVER.write().unwrap() = lic.host.clone();
     }
 }
